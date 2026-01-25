@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+    <name>DVD Cover</name>
+    <id>com.github.redtoad.inkscape-printer-labels</id>
+
+    <description>Various Printer Labels</description>
+    <category context="TemplateCategory">Print</category>
+    <icon>print_labels.svg</icon>
+
+    <param name="template" gui-text="Template:" type="enum" appearance="combo">
+        <item value="0" translatable="no">TopStick No. 8707 (70 x 41 mm)</item>
+        <item value="1" translatable="no">TowStix A4-Round-24 (4 cm Round)</item>
+        <!--<item value="1" translatable="no">Another Label (Width x Height mm)</item>-->
+    </param>
+
+    <!-- Modular grid support in Inkscape 1.4+ -->
+    <param name="add-shapes" gui-text="Add Shapes" type="bool">true</param>
+
+    <!-- Modular grid support in Inkscape 1.4+ -->
+    <param name="add-grid" gui-text="Add Grid" type="bool">false</param>
+
+    <template icon="print_labels.svg">
+      <preset name="Printer Labels" label="Various Sizes" visibility="icon"/>
+    </template>
+    <script>
+        <command location="inx" interpreter="python">template_printer_labels.py</command>
+    </script>
+</inkscape-extension>
