@@ -10,6 +10,7 @@
     <param name="template" gui-text="Template:" type="enum" appearance="combo">
         <item value="0" translatable="no">TopStick No. 8707 (70 x 41 mm)</item>
         <item value="1" translatable="no">TowStix A4-Round-24 (4 cm Round)</item>
+        <item value="2" translatable="no">Avery / Zweckform No. 3660 (97 x 67.7 mm)</item>
         <!--<item value="1" translatable="no">Another Label (Width x Height mm)</item>-->
     </param>
 
