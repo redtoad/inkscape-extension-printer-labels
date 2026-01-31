@@ -13,7 +13,7 @@ Copy `template_printer_labels.inx` and `template_printer_labels.py` into your ex
 Once you restart Inkscape, a *new template* appears in the *Print* template menu. See also the official instructions for installing extensions: <https://inkscape.org/learn/faq/> (section “How to install new extensions…”).
 
 <details>
-<summary>Where is my Inkscape extension nfolder?</summary>
+<summary>Where is my Inkscape extension folder?</summary>
 The extension folder ist typically in `~/.config/inkscape/extensions`. To find yours, try one of the following:
 
 - Find the path in Inkscape: Edit > Preferences > System, open “User extensions” (e.g. on macOS: `/Users/<your username>/.config/inkscape/extensions`).
