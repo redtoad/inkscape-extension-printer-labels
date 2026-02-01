@@ -8,9 +8,9 @@ dependencies = [
     "inkex>=1.4.1",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
-    "pytest>=8.0.0",
+    "pytest>=9.0.1",
 ]
 
 [tool.pytest.ini_options]
