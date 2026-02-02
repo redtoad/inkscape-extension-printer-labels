@@ -22,7 +22,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        sudo apt-get install libcairo2-dev python3-cairo-dev pkg-config python3-dev
+        sudo apt-get update
+        sudo apt-get install -y libcairo2-dev python3-cairo-dev pkg-config python3-dev libgirepository1.0-dev
         python -m pip install --upgrade pip
         pip install pytest
         pip install inkex
