@@ -24,7 +24,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -qq --no-install-recommends \
-          librsvg2-2 librsvg2-common \
+          librsvg2-2 librsvg2-common libxml2-dev lixslt-dev \
           libcairo2-dev libgirepository1.0-dev libgirepository-2.0-dev gir1.2-gtk-3.0 gir1.2-gtk-4.0
         python -m pip install --upgrade pip
         pip install pytest
