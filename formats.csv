@@ -1,0 +1,18 @@
+# This file contains all supported label formats one line per format.
+# label = name of the label format
+# page_width = width of the page
+# page_height = height of the page
+# units = units used for page and label dimensions (mm or inch)
+# label_width = width of a single label
+# label_height = height of a single label
+# cols = number of label columns per page
+# rows = number of label rows per page
+# shape = shape of the label (rectangular or circular) (optional, default is rectangular)
+# offset_x = horizontal offset from the left edge of the page to the first label (optional
+# offset_y = vertical offset from the top edge of the page to the first label (optional)
+# spacing_x = horizontal spacing between labels (optional)
+# spacing_y = vertical spacing between labels (optional)
+label,page_width,page_height,units,label_width,label_height,cols,rows,shape,offset_x,offset_y,spacing_x,spacing_y
+TopStick No. 8707,210.0,297.0,mm,70.0,41.0,3,7,RECTANGLE,0,5.0
+TownStix A4-Round-24,210.0,297.0,mm,40.0,40.0,4,6,CIRCLE,16.0,13.5,6.0,6.0
+Avery / Zweckform No. 3660,210.0,297.0,mm,97.0,67.7,2,4,RECTANGLE,8.0,13.1
