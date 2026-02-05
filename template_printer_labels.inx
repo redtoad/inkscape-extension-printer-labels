@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://gitlab.com/inkscape/extensions/-/raw/master/inkex/tester/inkscape.extension.rng"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
     <name>DVD Cover</name>
-    <id>com.github.redtoad.inkscape-printer-labels</id>
+    <id>com.github.redtoad.inkscape-extension-printer-labels</id>
 
     <description>Various Printer Labels</description>
     <category context="TemplateCategory">Print</category>
-    <icon>print_labels.svg</icon>
 
-    <param name="template" gui-text="Template:" type="enum" appearance="combo">
-        <item value="0" translatable="no">TopStick No. 8707 (70 x 41 mm)</item>
-        <item value="1" translatable="no">TowStix A4-Round-24 (4 cm Round)</item>
-        <item value="2" translatable="no">Avery / Zweckform No. 3660 (97 x 67.7 mm)</item>
-        <!--<item value="1" translatable="no">Another Label (Width x Height mm)</item>-->
+    <param name="template" gui-text="Template:" type="optiongroup" appearance="combo">
+        <option value="0" translatable="no">TopStick No. 8707 (70 x 41 mm)</option>
+        <option value="1" translatable="no">TowStix A4-Round-24 (4 cm Round)</option>
+        <option value="2" translatable="no">Avery / Zweckform No. 3660 (97 x 67.7 mm)</option>
+        <!--<option value="1" translatable="no">Another Label (Width x Height mm)</option>-->
     </param>
 
     <!-- Modular grid support in Inkscape 1.4+ -->
