@@ -143,10 +143,12 @@ class LabelSheet(inkex.TemplateExtension):
             grid = inkex.elements.Grid(
                 type="modular",
                 # Yes, these have to be strings!
-                originx=str(self.specs.offset[0]),
-                originy=str(self.specs.offset[1]),
+                originx=str(self.specs.offset[0] - self.specs.spacing[0] / 2.0),
+                originy=str(self.specs.offset[1] - self.specs.spacing[1] / 2.0),
                 spacingx=str(self.specs.label_size[0]),
                 spacingy=str(self.specs.label_size[1]),
+                gapx=str(self.specs.spacing[0]),
+                gapy=str(self.specs.spacing[1]),
                 units=units,
             )
             self.svg.namedview.show_guides = True
