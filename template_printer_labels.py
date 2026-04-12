@@ -27,6 +27,8 @@ class Label(object):
     type: str = RECTANGLE
     # horizontal and vertical spacing between labels(optional)
     spacing: tuple[float, float] = (0.0, 0.0)
+    # corner radius for rectangular labels (optional, ignored for circular labels)
+    corner_radius: float = 0.0
 
     def get_guides(self) -> Iterator[tuple[float, bool, None | str]]:
         page_width, page_height = self.page_size
@@ -82,6 +84,8 @@ class Label(object):
                             top=y,
                             width=label_width,
                             height=label_height,
+                            rx=self.corner_radius,
+                            ry=self.corner_radius,
                         )
                     case "circular":
                         rx = label_width / 2.0
@@ -99,9 +103,11 @@ class Label(object):
 
 # fmt: off
 LABELS = [
+    # name, Label(()page size), units, (label size), (cols, rows), offset=(left, top), type=shape, spacing=(horizontal, vertical))
     ("TopStick No. 8707", Label((210.0, 297.0), "mm", (70.0, 41.0), (3, 7), offset=(0.0, 5.0))),
     ("TownStix A4-Round-24", Label((210.0, 297.0), "mm", (40.0, 40.0), (4, 6), offset=(16.0, 13.5), type=CIRCLE, spacing=(6.0, 6.0))), 
     ("Avery / Zweckform No. 3660", Label((210.0, 297.0), "mm", (97.0, 67.7), (2, 4), offset=(8.0, 13.1))), 
+    ("HERMA No. 4587", Label((210.0, 297.0), "mm", (80.0, 50.0), (2, 5), offset=(18.0, 9.0), spacing=(10.0, 5.0), corner_radius=3.0)),
 ]
 # fmt: on
 

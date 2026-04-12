@@ -6,3 +6,4 @@
 - [ ] Support labels sheets which have a non-standard i.e. non-grid layout (e.g. AVERY/ZWECKFORM 60x60-HRT)
 - [ ] Draw guidelines through the middle (togge in UI)
 - [ ] Add images for explanation to UI
+- [x] Support rounded corners
