@@ -142,7 +142,7 @@ class LabelSheet(inkex.TemplateExtension):
             group = inkex.Group.new("Shapes")
             for shape in self.specs.get_shapes():
                 group.add(shape)
-            self.svg.add(group)
+        self.svg.insert(0, group)  # move to back of render order
 
         # ! The Grid element is really useless! Dow we really want to keep this?
         if self.options.add_grid:
