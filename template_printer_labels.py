@@ -36,26 +36,26 @@ class Label(object):
         spacing_x, spacing_y = self.spacing
 
         if offset_y != 0.0:
-            yield page_height - offset_y, True, "bottom offset"
+            yield offset_y, True, "top offset"
             yield (
-                page_height - rows * label_height - (rows - 1) * spacing_y - offset_y,
+                offset_y + rows * label_height + (rows - 1) * spacing_y,
                 True,  # horizontal
-                "top offset",
+                "bottom offset",
             )
 
         if offset_x != 0.0:
-            yield page_width - offset_x, False, "right offset"
+            yield offset_x, False, "left offset"
             yield (
-                page_width - cols * label_width - (cols - 1) * spacing_x - offset_x,
-                False,  # vertical
-                "left offset",
+                offset_x + cols * label_width + (cols - 1) * spacing_x,
+                False,
+                "right offset",
             )
 
         for r in range(1, rows):
             y = offset_y + r * (label_height + spacing_y)
-            yield page_height - y, True, None
+            yield y, True, None
             if spacing_y > 0.0:
-                yield page_height - y + spacing_y, True, None
+                yield y - spacing_y, True, None
 
         for c in range(1, cols):
             x = offset_x + c * (label_width + spacing_x)
