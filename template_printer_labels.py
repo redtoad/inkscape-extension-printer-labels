@@ -53,9 +53,9 @@ class Label(object):
 
         for r in range(1, rows):
             y = offset_y + r * (label_height + spacing_y)
-            yield y, True, None
+            yield page_height - y, True, None
             if spacing_y > 0.0:
-                yield y - spacing_y, True, None
+                yield page_height - y + spacing_y, True, None
 
         for c in range(1, cols):
             x = offset_x + c * (label_width + spacing_x)
