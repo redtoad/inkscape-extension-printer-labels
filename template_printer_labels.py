@@ -107,7 +107,7 @@ LABELS = [
     ("TopStick No. 8707", Label((210.0, 297.0), "mm", (70.0, 41.0), (3, 7), offset=(0.0, 5.0))),
     ("TownStix A4-Round-24", Label((210.0, 297.0), "mm", (40.0, 40.0), (4, 6), offset=(16.0, 13.5), type=CIRCLE, spacing=(6.0, 6.0))), 
     ("Avery / Zweckform No. 3660", Label((210.0, 297.0), "mm", (97.0, 67.7), (2, 4), offset=(8.0, 13.1))), 
-    ("HERMA No. 4587", Label((210.0, 297.0), "mm", (80.0, 50.0), (2, 5), offset=(18.0, 9.0), spacing=(10.0, 5.0), corner_radius=3.0)),
+    ("HERMA No. 4587", Label((210.0, 297.0), "mm", (80.0, 50.0), (2, 5), offset=(18.0, 14.0), spacing=(15.0, 4.75), corner_radius=3.0)),
 ]
 # fmt: on
 
