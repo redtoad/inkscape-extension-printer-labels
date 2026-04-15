@@ -127,10 +127,10 @@ def test_set_namedview_with_shapes(mock_init):
     extension.set_namedview(210.0, 297.0, "mm")
 
     # Verify that a group was added to SVG
-    assert mock_svg.add.called
+    assert mock_svg.insert.called
 
     # The added element should be a Group
-    added_element = mock_svg.add.call_args[0][0]
+    added_element = mock_svg.insert.call_args[0][1]
     assert hasattr(added_element, "label")  # Groups have labels
 
 
